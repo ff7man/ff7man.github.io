@@ -70,6 +70,9 @@ Different Compilations:
 
 ![image](https://user-images.githubusercontent.com/116538902/202667599-f120a6a7-6688-4d29-8c0d-1226a247809c.png)
 ![image](https://user-images.githubusercontent.com/116538902/202667745-3b539266-cbd3-40b8-9774-07f95f67fcf3.png)
+![image](https://user-images.githubusercontent.com/116538902/202668320-b7f704b3-e0ba-435e-a943-231f7b96f015.png)
+![image](https://user-images.githubusercontent.com/116538902/202668503-976e4b49-82d1-4f53-97de-a91170137c79.png)
+
 
 ## FF7 Worldmap
 
