@@ -7,3 +7,6 @@
 
 ## Calculator
 [https://ff7man.github.io/calc.html](https://ff7man.github.io/calc.html)
+
+## FF7 Decompilations
+[https://ff7man.github.io/ff7decompilations.html](https://ff7man.github.io/ff7decompilations.html)
