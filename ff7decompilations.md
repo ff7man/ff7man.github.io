@@ -66,7 +66,7 @@ Movement:
 - Numpad - to enable manual mode
 
 Different Compilations:
-- The `patch_setChocoboInfo()` function gives various customizations to what type of race you will have
+- The `patch_setChocoboInfo()` function in FF7ChocoboMain.cpp gives various customizations to what type of race you will have
 
 ![image](https://user-images.githubusercontent.com/116538902/202667599-f120a6a7-6688-4d29-8c0d-1226a247809c.png)
 ![image](https://user-images.githubusercontent.com/116538902/202667745-3b539266-cbd3-40b8-9774-07f95f67fcf3.png)
