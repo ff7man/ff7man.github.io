@@ -56,7 +56,7 @@ Movement:
 
 ## FF7 Chocobo
 
-- The default save loaded is at C:\ff7\save\save00.ff7
+- The default save loaded is at `C:\ff7\save\save00.ff7` slot 0 (first save)
 - Double click the exe to run
 
 Movement:
