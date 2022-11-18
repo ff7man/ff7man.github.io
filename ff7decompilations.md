@@ -81,7 +81,7 @@ Different Compilations:
 - Battles reset world map
 - New areas reset world map
 
-# Movement:
+Movement:
 - Numpad 4862 to move
 - Numpad - map
 - Numpad + Menu
