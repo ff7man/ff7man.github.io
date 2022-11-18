@@ -76,4 +76,19 @@ Different Compilations:
 
 ## FF7 Worldmap
 
+- The default save is C:\ff7\save\save00.ff7 slot 1 (second save), this should be on the world map not in an area.
 - Double click the exe to run
+- Battles reset world map
+
+# Movement:
+- Numpad 4862 to move
+- Numpad - map
+- Numpad + Menu
+- Numpad 0 Exit Menu
+
+![image](https://user-images.githubusercontent.com/116538902/202671954-c14be444-3ada-4e8e-a4ca-45306618f4ad.png)
+![image](https://user-images.githubusercontent.com/116538902/202672044-3a242b59-b6b1-4a8b-866e-350a0f1542b3.png)
+![image](https://user-images.githubusercontent.com/116538902/202672649-688f1199-f52d-4316-9909-e95017a6f1d2.png)
+
+While still dark, text shows up properly when not using VMware Workstation
+![image](https://user-images.githubusercontent.com/116538902/202673687-6ade5523-f602-4f7b-8c0a-c3e326c5e1a6.png)
