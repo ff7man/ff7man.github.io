@@ -29,6 +29,7 @@ Run the installer to unzip to C:\dx5sdk
 - [ff7-chocobo](https://github.com/ergonomy-joe/ff7-chocobo)
 
 6. Unzip his projects and update the .vcproj 
+
 The vcproj file reference `\VC50PROCD1\DXSDK5` change this to `C:\dx5sdk\` throughout
 
 7. Open the .sln in visual studio 2008 and build the project
