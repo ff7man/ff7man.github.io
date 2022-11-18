@@ -1,6 +1,8 @@
 # FF7 Decompilations
 
-Parts of FF7 have been decompiled by https://github.com/ergonomy-joe, this is a quick guide to compile and execute his projects.
+Parts of FF7 have been reverse engineered and decompiled by https://github.com/ergonomy-joe, their partial sources can be recompiled into functioning binaries. 
+
+This is a quick guide to compile and execute his projects.
 
 ## Compiling
 
