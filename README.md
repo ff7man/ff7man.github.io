@@ -13,3 +13,6 @@
 
 ## Crisis Core Reunion Playthrough
 [https://ff7man.github.io/crisis_core_reunion.html](https://ff7man.github.io/crisis_core_reunion.html)
+
+## PCSXjs-stream
+[PlayStation emulator with low-memory CD streaming](https://ff7man.github.io/pcsxjs-streaming/)
