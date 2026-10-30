@@ -16,3 +16,6 @@
 
 ## pcsxEdge
 [PlayStation emulator with low-memory CD streaming](https://ff7man.github.io/pcsxEdge/)
+
+## Chocobo RACE Manual Tool
+[Open the manual-entry race tool](manual/) — enter racer stats, jockey colors, and sprinting manually.
