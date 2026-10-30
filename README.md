@@ -22,3 +22,6 @@
 
 ## PC Chocobo Race Predictor
 [Open the PC seed, field, and prize predictor](pc/)
+
+## PlayStation Chocobo Race Finder
+[Open the PSX frame and prize search tool](psx/)
