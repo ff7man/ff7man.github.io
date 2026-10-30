@@ -29,5 +29,3 @@
 ## PSX Computed Winner Lookup
 [Open the CSV-backed PSX race winner lookup](psxcomputed/)
 
-## PSX Chocobo Data Generator
-[Farm PlayStation race CSVs for PSX Computed](psxdatagen/)
