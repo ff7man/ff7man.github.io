@@ -11,6 +11,49 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
+.tool-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px 24px;
+  flex-wrap: wrap;
+  margin: 12px 0 20px;
+  padding: 14px 18px;
+  color: #fff8dc;
+  background: linear-gradient(110deg, #252411, #66520c);
+  border: 2px solid #c4a64b;
+  box-shadow: 0 3px 8px #0004;
+}
+.tool-banner-title {
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: .02em;
+}
+.tool-banner-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.tool-banner a {
+  display: inline-block;
+  padding: 8px 11px;
+  color: #fff8dc;
+  font-weight: 700;
+  text-decoration: none;
+  background: #17170f;
+  border: 1px solid #d7bd68;
+  border-radius: 3px;
+}
+.tool-banner a:hover,
+.tool-banner a:focus-visible {
+  color: #211b05;
+  background: #f5d95f;
+}
+@media screen and (max-width: 600px) {
+  .tool-banner { padding: 12px; }
+  .tool-banner-links { width: 100%; }
+  .tool-banner a { flex: 1 1 calc(50% - 8px); text-align: center; }
+}
 /* https://www.w3schools.com/howto/howto_css_column_cards.asp */
 /* Float four columns side by side */
 .column {
@@ -47,6 +90,15 @@ body {
 }
 </style>
 <body>
+<nav class="tool-banner" aria-label="New and improved Chocobo tools">
+  <div class="tool-banner-title">New &amp; improved Chocobo tools</div>
+  <div class="tool-banner-links">
+    <a href="/psxcomputed/">PSX Computed</a>
+    <a href="/pc/">PC Predictor</a>
+    <a href="/manual/">Manual Entry</a>
+    <a href="https://github.com/ff7man/chocobo-betting/tree/main/psxracer">PSX + Emulator (local)</a>
+  </div>
+</nav>
 <script>
 //https://github.com/akjpro/form-anticlear
 var formAntiClear={};const event=document.createEvent("Event");function isAntiClearNone(e){return e.className.split(" ").indexOf("form-anticlear-none")>=0||e.parentElement&&isAntiClearNone(e.parentElement,"form-anticlear-none")}event.initEvent("anticleared",!0,!0),formAntiClear.clear=function(e=".form-anticlear"){document.querySelectorAll(e).forEach(function(e){e.reset()})},window.onbeforeunload=function(){document.querySelectorAll(".form-anticlear input:not([type='radio']), .form-anticlear select, .form-anticlear textarea").forEach(function(e,t){isAntiClearNone(e)||null===e.value||""===e.value||("checkbox"==e.type?localStorage.setItem("frf_"+e.name+"_"+t,e.checked):localStorage.setItem("frf_"+e.name+"_"+t,e.value))}),document.querySelectorAll('.form-anticlear input[type="radio"]:checked').forEach(function(e,t){isAntiClearNone(e)||localStorage.setItem("frf_"+e.name+"_"+t,e.value)})},window.onload=function(){var e=[];document.querySelectorAll(".form-anticlear input:not([type='radio']), .form-anticlear select, .form-anticlear textarea").forEach(function(e,t){var n="frf_"+e.name+"_"+t;null!==localStorage.getItem(n)&&("checkbox"==e.type?e.checked="true"==localStorage.getItem(n):e.value=localStorage.getItem(n))}),document.querySelectorAll('.form-anticlear input[type="radio"]').forEach(function(t){var n="frf_"+t.name+"_"+i;e.indexOf(n)<0&&null!==localStorage.getItem(n)&&(e.push(n),document.querySelector("input[type='radio'][name='"+t.name+"'][value='"+localStorage.getItem(n)+"']").checked=!0)}),localStorage.clear(),document.dispatchEvent(event)};
