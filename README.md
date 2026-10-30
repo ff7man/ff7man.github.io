@@ -25,3 +25,6 @@
 
 ## PlayStation Chocobo Race Finder
 [Open the PSX frame and prize search tool](psx/)
+
+## PSX Computed Winner Lookup
+[Open the CSV-backed PSX race winner lookup](psxcomputed/)
