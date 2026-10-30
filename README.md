@@ -19,3 +19,6 @@
 
 ## Chocobo RACE Manual Tool
 [Open the manual-entry race tool](manual/) — enter racer stats, jockey colors, and sprinting manually.
+
+## PC Chocobo Race Predictor
+[Open the PC seed, field, and prize predictor](pc/)
