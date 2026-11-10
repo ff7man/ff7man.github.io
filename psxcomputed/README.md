@@ -21,3 +21,16 @@ race results; B, A, and S have both short and long results. Results outside the
 available data range are unavailable; the app does not simulate finishes or
 infer missing results. See the [source repository](https://github.com/ff7man/chocobo-betting/tree/main/psxcomputed)
 for the builder, database format, and update instructions.
+
+## Faster frame matching
+
+The frame search uses `race_search.c` compiled to `race-search.wasm` to check
+candidate seeds, then uses JavaScript to build the complete race after a match.
+Serve the app over HTTP to enable WebAssembly; `file://` automatically falls
+back to JavaScript. To rebuild from `psxcomputed/`, run this in the app folder:
+
+```sh
+cd psxcomputed
+emcc race_search.c -O3 -s STANDALONE_WASM=1 -Wl,--no-entry \
+  -Wl,--export=scan -Wl,--export-memory -o race-search.wasm
+```
