@@ -17,7 +17,7 @@ Tools, research, and resources for Final Fantasy VII and related games. The
 | PSX Data Generator | Local emulator | Farm PlayStation race results to extend PSX Computed. | [Setup and source](https://github.com/ff7man/chocobo-betting/tree/main/psxdatagen) |
 | Frame Race Prototype | Local emulator | Buildable DuckStation patch for target-frame race testing. | [Setup and source](https://github.com/ff7man/chocobo-betting/tree/main/frame_race_prototype) |
 
-## Other FF7 Projects
+## Other Projects
 
 - [FF7 Decompilations](https://ff7man.github.io/ff7decompilations.html)
 - [Crisis Core Reunion Playthrough](https://ff7man.github.io/crisis_core_reunion.html)
