@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#212315">
+  <meta name="description" content="Web tools and emulator projects for Final Fantasy VII Chocobo racing.">
+  <title>FF7 Chocobo Tools</title>
+  <style>
+    :root { color-scheme: light; font-family: Arial, Helvetica, sans-serif; color: #272719; background: #f3f0df; }
+    * { box-sizing: border-box; }
+    body { margin: 0; padding: clamp(18px, 5vw, 56px); }
+    main { max-width: 1120px; margin: 0 auto; }
+    header { margin-bottom: 24px; padding: clamp(22px, 5vw, 42px); color: #fff8dc; background: linear-gradient(120deg, #242719, #655510); border: 3px solid #c2a747; box-shadow: 0 5px 18px #0003; }
+    h1 { margin: 0; font-size: clamp(2rem, 5vw, 3.2rem); letter-spacing: .015em; }
+    header p { max-width: 660px; margin: 12px 0 0; line-height: 1.55; color: #f2e7b8; }
+    .table-wrap { overflow-x: auto; background: #fffdf5; border: 1px solid #b8a65c; box-shadow: 0 4px 16px #0002; }
+    table { width: 100%; border-collapse: collapse; min-width: 720px; }
+    th, td { padding: 15px 17px; text-align: left; vertical-align: top; border-bottom: 1px solid #ded7b9; line-height: 1.45; }
+    th { color: #fff8dc; background: #343623; font-size: .88rem; letter-spacing: .04em; text-transform: uppercase; }
+    tbody tr:nth-child(even) { background: #f5f2e6; }
+    tbody tr:last-child td { border-bottom: 0; }
+    td:first-child { min-width: 205px; font-weight: 700; }
+    td:nth-child(2) { white-space: nowrap; color: #575333; }
+    a { color: #5c4700; font-weight: 700; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+    a:hover, a:focus-visible { color: #1c5a2b; }
+    footer { margin-top: 18px; color: #5b5947; font-size: .9rem; }
+    @media (max-width: 600px) { body { padding: 14px; } th, td { padding: 12px; } }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>FF7 Chocobo Tools</h1>
+      <p>Race calculators, seed and frame finders, and emulator tools for Final Fantasy VII Chocobo racing. Choose a tool below.</p>
+    </header>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th scope="col">Tool</th><th scope="col">Platform</th><th scope="col">What it does</th><th scope="col">Open</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Classic Betting Calculator</td><td>Web</td><td>Enter race details to review possible bets.</td><td><a href="/calc.html">Open calculator</a></td></tr>
+          <tr><td>RNG Tool</td><td>Web</td><td>Explore the original Chocobo racing RNG tool.</td><td><a href="/rng.html">Open RNG tool</a></td></tr>
+          <tr><td>Manual Race Tool</td><td>Web</td><td>Enter six chocobos' stats and jockey colors by hand to see suggested bets.</td><td><a href="/manual/">Open manual tool</a></td></tr>
+          <tr><td>PC Race Predictor</td><td>Web</td><td>Predict PC-version chocobo stats and prizes from a time-based seed.</td><td><a href="/pc/">Open PC predictor</a></td></tr>
+          <tr><td>PSX Frame Finder</td><td>Web</td><td>Find a PlayStation frame from the chocobo stats and prizes shown in game.</td><td><a href="/psx/">Open PSX finder</a></td></tr>
+          <tr><td>PSX Computed Winner Lookup</td><td>Web</td><td>Find matching frames and use recorded race winners where available. Its prize hunt uses best guesses outside the current winner-data coverage.</td><td><a href="/psxcomputed/">Open PSX Computed</a></td></tr>
+          <tr><td>PSX Racer</td><td>Local emulator</td><td>Run a matched race in DuckStation and return the actual winners. Requires local setup.</td><td><a href="https://github.com/ff7man/chocobo-betting/tree/main/psxracer">Setup and source</a></td></tr>
+          <tr><td>PSX Data Generator</td><td>Local emulator</td><td>Farm PlayStation race results to extend the PSX Computed winner database.</td><td><a href="https://github.com/ff7man/chocobo-betting/tree/main/psxdatagen">Setup and source</a></td></tr>
+          <tr><td>Frame Race Prototype</td><td>Local emulator</td><td>Buildable DuckStation patch for testing target frames and reading race results.</td><td><a href="https://github.com/ff7man/chocobo-betting/tree/main/frame_race_prototype">Setup and source</a></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <footer>More details and source code: <a href="https://github.com/ff7man/chocobo-betting">ff7man/chocobo-betting</a>.</footer>
+  </main>
+</body>
+</html>
