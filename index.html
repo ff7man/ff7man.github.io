@@ -11,10 +11,8 @@
     * { box-sizing: border-box; }
     body { margin: 0; padding: clamp(18px, 5vw, 56px); }
     main { max-width: 1120px; margin: 0 auto; }
-    header { margin-bottom: 24px; padding: clamp(22px, 5vw, 42px); color: #fff8dc; background: linear-gradient(120deg, #242719, #655510); border: 3px solid #c2a747; box-shadow: 0 5px 18px #0003; }
-    h1 { margin: 0; font-size: clamp(2rem, 5vw, 3.2rem); letter-spacing: .015em; }
-    header p { max-width: 660px; margin: 12px 0 0; line-height: 1.55; color: #f2e7b8; }
     section { margin-top: 34px; }
+    main > section:first-child { margin-top: 0; }
     h2 { margin: 0 0 14px; color: #302d1d; font-size: clamp(1.45rem, 3vw, 2rem); }
     .section-intro { margin: -4px 0 16px; color: #5b5947; line-height: 1.55; }
     .table-wrap { overflow-x: auto; background: #fffdf5; border: 1px solid #b8a65c; box-shadow: 0 4px 16px #0002; }
@@ -38,9 +36,6 @@
 </head>
 <body>
   <main>
-    <header>
-      <h1>Final Fantasy VII Projects</h1>
-    </header>
     <section aria-labelledby="chocobo-tools-title">
       <h2 id="chocobo-tools-title">FF7 Chocobo Tools</h2>
       <div class="table-wrap">
