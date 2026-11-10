@@ -4,8 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#212315">
-  <meta name="description" content="Web tools and emulator projects for Final Fantasy VII Chocobo racing.">
-  <title>FF7 Chocobo Tools</title>
+  <meta name="description" content="Final Fantasy VII tools, reverse-engineering notes, playthrough resources, and emulator projects by ff7man.">
+  <title>FF7 Projects and Tools · ff7man</title>
   <style>
     :root { color-scheme: light; font-family: Arial, Helvetica, sans-serif; color: #272719; background: #f3f0df; }
     * { box-sizing: border-box; }
@@ -14,6 +14,9 @@
     header { margin-bottom: 24px; padding: clamp(22px, 5vw, 42px); color: #fff8dc; background: linear-gradient(120deg, #242719, #655510); border: 3px solid #c2a747; box-shadow: 0 5px 18px #0003; }
     h1 { margin: 0; font-size: clamp(2rem, 5vw, 3.2rem); letter-spacing: .015em; }
     header p { max-width: 660px; margin: 12px 0 0; line-height: 1.55; color: #f2e7b8; }
+    section { margin-top: 34px; }
+    h2 { margin: 0 0 14px; color: #302d1d; font-size: clamp(1.45rem, 3vw, 2rem); }
+    .section-intro { margin: -4px 0 16px; color: #5b5947; line-height: 1.55; }
     .table-wrap { overflow-x: auto; background: #fffdf5; border: 1px solid #b8a65c; box-shadow: 0 4px 16px #0002; }
     table { width: 100%; border-collapse: collapse; min-width: 720px; }
     th, td { padding: 15px 17px; text-align: left; vertical-align: top; border-bottom: 1px solid #ded7b9; line-height: 1.45; }
@@ -25,33 +28,51 @@
     a { color: #5c4700; font-weight: 700; text-decoration-thickness: 1px; text-underline-offset: 3px; }
     a:hover, a:focus-visible { color: #1c5a2b; }
     footer { margin-top: 18px; color: #5b5947; font-size: .9rem; }
+    .resource-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 14px; }
+    .resource-card { display: block; min-height: 116px; padding: 18px; color: inherit; background: #fffdf5; border: 1px solid #b8a65c; box-shadow: 0 3px 10px #0001; text-decoration: none; }
+    .resource-card strong { display: block; margin-bottom: 8px; color: #5c4700; font-size: 1.05rem; }
+    .resource-card span { color: #4c4a3b; font-weight: 400; line-height: 1.45; }
+    .resource-card:hover, .resource-card:focus-visible { border-color: #436c39; box-shadow: 0 0 0 2px #436c3940; }
     @media (max-width: 600px) { body { padding: 14px; } th, td { padding: 12px; } }
   </style>
 </head>
 <body>
   <main>
     <header>
-      <h1>FF7 Chocobo Tools</h1>
-      <p>Race calculators, seed and frame finders, and emulator tools for Final Fantasy VII Chocobo racing. Choose a tool below.</p>
+      <h1>Final Fantasy VII Projects</h1>
+      <p>Tools, research, and resources for Final Fantasy VII and its related games. Explore Chocobo racing tools, decompilation notes, a Crisis Core Reunion playthrough, and emulator projects.</p>
     </header>
-    <div class="table-wrap">
-      <table>
-        <thead>
-          <tr><th scope="col">Tool</th><th scope="col">Platform</th><th scope="col">What it does</th><th scope="col">Open</th></tr>
-        </thead>
-        <tbody>
-          <tr><td>Classic Betting Calculator</td><td>Web</td><td>Enter race details to review possible bets.</td><td><a href="/calc.html">Open calculator</a></td></tr>
-          <tr><td>RNG Tool</td><td>Web</td><td>Explore the original Chocobo racing RNG tool.</td><td><a href="/rng.html">Open RNG tool</a></td></tr>
-          <tr><td>Manual Race Tool</td><td>Web</td><td>Enter six chocobos' stats and jockey colors by hand to see suggested bets.</td><td><a href="/manual/">Open manual tool</a></td></tr>
-          <tr><td>PC Race Predictor</td><td>Web</td><td>Predict PC-version chocobo stats and prizes from a time-based seed.</td><td><a href="/pc/">Open PC predictor</a></td></tr>
-          <tr><td>PSX Frame Finder</td><td>Web</td><td>Find a PlayStation frame from the chocobo stats and prizes shown in game.</td><td><a href="/psx/">Open PSX finder</a></td></tr>
-          <tr><td>PSX Computed Winner Lookup</td><td>Web</td><td>Find matching frames and use recorded race winners where available. Its prize hunt uses best guesses outside the current winner-data coverage.</td><td><a href="/psxcomputed/">Open PSX Computed</a></td></tr>
-          <tr><td>PSX Racer</td><td>Local emulator</td><td>Run a matched race in DuckStation and return the actual winners. Requires local setup.</td><td><a href="https://github.com/ff7man/chocobo-betting/tree/main/psxracer">Setup and source</a></td></tr>
-          <tr><td>PSX Data Generator</td><td>Local emulator</td><td>Farm PlayStation race results to extend the PSX Computed winner database.</td><td><a href="https://github.com/ff7man/chocobo-betting/tree/main/psxdatagen">Setup and source</a></td></tr>
-          <tr><td>Frame Race Prototype</td><td>Local emulator</td><td>Buildable DuckStation patch for testing target frames and reading race results.</td><td><a href="https://github.com/ff7man/chocobo-betting/tree/main/frame_race_prototype">Setup and source</a></td></tr>
-        </tbody>
-      </table>
-    </div>
+    <section aria-labelledby="chocobo-tools-title">
+      <h2 id="chocobo-tools-title">FF7 Chocobo Tools</h2>
+      <p class="section-intro">Race calculators, seed and frame finders, and emulator tools for Chocobo racing.</p>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th scope="col">Tool</th><th scope="col">Platform</th><th scope="col">What it does</th><th scope="col">Open</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Classic Betting Calculator</td><td>Web</td><td>Enter race details to review possible bets.</td><td><a href="/calc.html">Open calculator</a></td></tr>
+            <tr><td>RNG Tool</td><td>Web</td><td>Explore the original Chocobo racing RNG tool.</td><td><a href="/rng.html">Open RNG tool</a></td></tr>
+            <tr><td>Manual Race Tool</td><td>Web</td><td>Enter six chocobos' stats and jockey colors by hand to see suggested bets.</td><td><a href="/manual/">Open manual tool</a></td></tr>
+            <tr><td>PC Race Predictor</td><td>Web</td><td>Predict PC-version chocobo stats and prizes from a time-based seed.</td><td><a href="/pc/">Open PC predictor</a></td></tr>
+            <tr><td>PSX Frame Finder</td><td>Web</td><td>Find a PlayStation frame from the chocobo stats and prizes shown in game.</td><td><a href="/psx/">Open PSX finder</a></td></tr>
+            <tr><td>PSX Computed Winner Lookup</td><td>Web</td><td>Find matching frames and use recorded race winners where available. Its prize hunt uses best guesses outside the current winner-data coverage.</td><td><a href="/psxcomputed/">Open PSX Computed</a></td></tr>
+            <tr><td>PSX Racer</td><td>Local emulator</td><td>Run a matched race in DuckStation and return the actual winners. Requires local setup.</td><td><a href="https://github.com/ff7man/chocobo-betting/tree/main/psxracer">Setup and source</a></td></tr>
+            <tr><td>PSX Data Generator</td><td>Local emulator</td><td>Farm PlayStation race results to extend the PSX Computed winner database.</td><td><a href="https://github.com/ff7man/chocobo-betting/tree/main/psxdatagen">Setup and source</a></td></tr>
+            <tr><td>Frame Race Prototype</td><td>Local emulator</td><td>Buildable DuckStation patch for testing target frames and reading race results.</td><td><a href="https://github.com/ff7man/chocobo-betting/tree/main/frame_race_prototype">Setup and source</a></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+    <section aria-labelledby="other-projects-title">
+      <h2 id="other-projects-title">Other FF7 Projects</h2>
+      <p class="section-intro">Reverse-engineering notes, playthrough resources, and emulator work.</p>
+      <div class="resource-list">
+        <a class="resource-card" href="/ff7decompilations.html"><strong>FF7 Decompilations</strong><span>Browse decompilation references and research notes.</span></a>
+        <a class="resource-card" href="/crisis_core_reunion.html"><strong>Crisis Core Reunion Playthrough</strong><span>Open the playthrough notes and route resources.</span></a>
+        <a class="resource-card" href="/pcsxEdge/"><strong>pcsxEdge</strong><span>PlayStation emulator project with low-memory CD streaming.</span></a>
+      </div>
+    </section>
     <footer>More details and source code: <a href="https://github.com/ff7man/chocobo-betting">ff7man/chocobo-betting</a>.</footer>
   </main>
 </body>
