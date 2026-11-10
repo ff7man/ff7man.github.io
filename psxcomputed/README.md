@@ -34,3 +34,8 @@ cd psxcomputed
 emcc race_search.c -O3 -s STANDALONE_WASM=1 -Wl,--no-entry \
   -Wl,--export=scan -Wl,--export-memory -o race-search.wasm
 ```
+
+The winner database stores only unordered top-two bet pairs for each class
+and course. Seven course results are packed at four bits each (28 bits per
+frame), in C/B/A/S order with short before long; Class C has no long course.
+The stored data omits finishing order because the bet grid only needs the pair.

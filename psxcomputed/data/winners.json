@@ -1,16 +1,13 @@
 {
-  "format": "PSCDB1",
-  "version": 1,
+  "format": "PSCDB2",
+  "version": 2,
   "maxSeedExclusive": 215999,
-  "bytesPerSeed": 6,
-  "byteOrder": "little-endian",
   "rankOrder": [
     "C",
     "B",
     "A",
     "S"
   ],
-  "rankWordBits": "each rank has 12 bits: bits 0-2 long first, 3-5 long second, 6-8 short first, 9-11 short second; zero means unavailable",
   "startupFramesSkipped": [
     0,
     1
@@ -125,7 +122,16 @@
     }
   },
   "recordCount": 1507791,
-  "databaseBytes": 1296006,
-  "compressedBytes": 1132084,
-  "compression": "zip-deflate"
+  "databaseBytes": 753917,
+  "compressedBytes": 705267,
+  "compression": "zip-deflate",
+  "startSeed": 600,
+  "frameCount": 215399,
+  "headerStartSeedBits": 32,
+  "headerFrameCountBits": 64,
+  "bitsPerFrame": 28,
+  "bitsPerPair": 4,
+  "bitOrder": "little-endian; least-significant bits first",
+  "courseOrder": "short then long within each class; C has short only",
+  "pairEncoding": "lexicographic unordered pairs: code 0 is 1-2 through code 14 is 5-6; code 15 means unavailable"
 }
